@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function goToPrintPage() {
+            window.location.href = 'print.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Morphing META - GALLERY</h1>
+        <nav>
+            <ul>
+                <li>EXHIBITIONS</li>
+                <li>ARTISTS</li>
+                <li>ART FAIRS</li>
+                <li>PUBLICATIONS</li>
+                <li>NEWS</li>
+                <li>ABOUT US</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="image-gallery">
+            <button class="prev">&lt;</button>
+            <img src="Wayang_Kulit.png" alt="Artwork">
+            <button class="next">&gt;</button>
+          <!-- explanation -->
+            <h2>Wayang Kulit</h2>
+        </div>
+      <div class="product-container">
+          <h2>The art of Wayang Kulit (On yellow board)</h2>
+          <p class="price">3.00 $</p>
+          <div class="quantity-container">
+              <button class="quantity-btn">-</button>
+              <span class="quantity">1</span>
+              <button class="quantity-btn">+</button>
+          </div>
+          <div class="product-actions">
+              <button class="print-now" onclick="goToPrintPage()">PRINT NOW</button>
+              <button class="add-to-cart">ADD TO CART</button>
+          </div>
+      </div>
+    </main>
+</body>
+</html>

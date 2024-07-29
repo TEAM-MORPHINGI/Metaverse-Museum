@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  justify-content: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+  font-size: 14px;
+  justify-content: center;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+main h2 {
+  font-size: 22px;
+  margin: 20px 0;
+}
+
+.image-gallery {
+  position: relative;
+  display: inline-block;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.info a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px;
+}
+
+.product-container {
+  background-color: #fff;
+  width: calc(90%-40px);
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 0 10px auto;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.product-container h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.quantity-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quantity-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.quantity {
+  margin: 0 10px;
+  font-size: 16px; 
+}
+
+.product-action {
+  display: flex;
+  margin : 0 auto;
+  width : 100%;
+  gap: 10px; /* Adjusts the spacing between buttons */
+  justify-content: space-between; /* Centers the buttons */
+  flex-flow : row wrap;
+  align-items : center;
+}
+
+.add-to-cart, .print-now {
+  flex : 1 1 auto;
+  display: block;
+  width: 100%;
+  /* max-width : 200px; */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+.print-now {
+  background-color: #000;
+  color: #fff;
+}
+
+.add-to-cart {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}

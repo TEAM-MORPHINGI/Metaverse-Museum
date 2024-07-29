@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print in Progress</title>
+  <link rel="stylesheet" href="print.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Print in Progress</h1>
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <p id="progressText">Printing... 0%</p>
+  </div>
+
+  <script>
+    // JavaScript to simulate progress update
+    let progress = 0;
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+
+    function updateProgress() {
+      if (progress < 100) {
+        progress += 1;
+        progressBar.style.width = progress + '%';
+        progressText.innerText = 'Printing... ' + progress + '%';
+        setTimeout(updateProgress, 100); // Simulate progress every 100ms
+      } else {
+        progressText.innerText = 'Printing Complete!';
+      }
+    }
+
+    updateProgress(); // Start the progress simulation
+  </script>
+</body>
+</html>
